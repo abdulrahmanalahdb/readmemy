@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaccination.ng</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0e1a;
+      color: #fff;
+    }
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #0f1324;
+      position: sticky;
+      top: 0;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 10px;
+    }
+    .navbar img {
+      width: 50px;
+      height: auto;
+    }
+    .header {
+      padding: 40px;
+    }
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .header img {
+      width: 100px;
+      margin-top: 20px;
+    }
+    .btn {
+      text-decoration: none;
+      color: #fff;
+      background: #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 10px;
+    }
+    .card {
+      margin: auto;
+      max-width: 600px;
+      background: #1e243a;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+    }
+    .card img {
+      width: 100px;
+      float: right;
+      margin-left: 10px;
+      border-radius: 10px;
+    }
+    .card h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Schedule</a>
+    <a href="#">Contact us</a>
+    <a href="#">Check Status</a>
+    <!-- شعار الموقع -->
+    <img src="img/Bg_FeedBack.png" alt="Logo">
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1>COVID-19 Vaccination Got Easier With Vaccination.ng</h1>
+      <p>Vaccination.ng will help you find the nearest center for vaccination, in all 36 states in Nigeria.</p>
+      <!-- صورة توضيحية -->
+      <img src="vaccine-icon.png" alt="Vaccine Icon">
+      <br>
+      <a href="#" class="btn">Get Vaccine</a>
+      <a href="#" class="btn">Help Centre</a>
+    </div>
+
+    <div class="card">
+      <h3>Schedule your Vaccination</h3>
+      <!-- صورة للقاح -->
+      <img src="" alt="Vaccine Bottle">
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="e.g., Ikeja Lagos, Nigeria">
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date">
+      </div>
+      <div class="form-group">
+        <label for="vaccine">Vaccine Type</label>
+        <select id="vaccine">
+          <option value="moderna">Moderna</option>
+          <option value="pfizer">Pfizer</option>
+          <option value="astrazeneca">AstraZeneca</option>
+        </select>
+      </div>
+      <button class="submit-btn">Submit</button>
+    </div>
+  </div>
+
+</body>
+</html>
+
